@@ -9,12 +9,15 @@
 3. `main_novel/gpt_notes.md`
 4. 作業対象の本文・設定ファイル
 
-PowerShellでは最初にUTF-8を指定する。
+PowerShellでは最初にUTF-8を指定する。本文確認時も文字化け防止のため、`Get-Content` は原則 `-Encoding UTF8` を付ける。
 
 ```powershell
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
+Get-Content -Raw -Encoding UTF8 main_novel/gpt_handoff.md
 ```
+
+PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗することがある。全話検索は `Get-ChildItem main_novel -Filter 'ch*.md' | Select-String -Pattern '...'` を使うか、`rg -g 'ch*.md' '...' main_novel` の形にする。
 
 リポジトリは `G:\novel`、本文と資料は主に `G:\novel\main_novel`。
 
@@ -175,6 +178,8 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 - 初対面・未確認の人物名を地の文で出さない。
 - 「翌日来る」と確信する根拠がない場合は、視点漏れ。レンジの投稿頻度、事務所からの移動距離、動画制作の手順から湊人が「明日来るものとして備える」と推測する形にする。
 - 作者視点の正しさを、湊人や美月の地の文に混ぜない。
+- GPTは後の展開を知っているため、本文で「〇〇ではない」「本当は〇〇」「後に〇〇する」「いずれ〇〇になる」と先回りしやすい。必要な否定は人物の観察・台詞・身体反応に置き換え、地の文で作者が答えを出さない。
+- 特に恋愛感情、敵味方判定、善悪判定、後の制度化や破局は、その時点の人物が認識できる範囲に留める。
 
 ## 配信状態管理
 
