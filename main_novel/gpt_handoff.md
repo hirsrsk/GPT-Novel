@@ -274,9 +274,5 @@ PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗す�
 
 ```text
 G:\novel の小説作業を続けます。
-まず main_novel/gpt_handoff.md と main_novel/gpt_notes.md を読んでください。
-次に git status と最新コミットを確認してください。
-作業対象に応じて prewrite.md、settings.md、settings_streamers.md、comments.md を読んでください。
-特に配信中/非配信、視点漏れ、ノートとコメント欄の差別化、切道レンジの最新人物像に注意してください。
-修正時は修正箇所だけを見ず、必ず前後関係、同じ場面全体、直前話・直後話、関連設定を確認し、全体として正しい構成になっているかを判断してから直してください。小手先の言い換えではなく、必要なら段落配置・場面順・話数建てまで再構成してください。
+まず main_novel/gpt_handoff.md をUTF-8で読み、そこに記録された方針に従って引き継いでください。
 ```
