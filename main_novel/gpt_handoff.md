@@ -19,7 +19,7 @@ Get-Content -Raw -Encoding UTF8 main_novel/gpt_handoff.md
 
 PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗することがある。全話検索は `Get-ChildItem main_novel -Filter 'ch*.md' | Select-String -Pattern '...'` を使うか、`rg -g 'ch*.md' '...' main_novel` の形にする。
 
-リポジトリは `G:\novel`、本文と資料は主に `G:\novel\main_novel`。
+リポジトリはこのファイルの親ディレクトリのさらに親、本文と資料は主に `main_novel`。リムーバブルディスク上で作業するため、別PCへ接続した場合でもドライブレター固定の絶対パスを前提にしない。
 
 ユーザーは別端末でも確認しているため、本文や設定を編集したら原則としてコミットして `push` まで行う。作業前後の差分と同期状態を確認する。
 
@@ -284,6 +284,6 @@ PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗す�
 ## 新チャット開始用プロンプト例
 
 ```text
-G:\novel の小説作業を続けます。
+この小説リポジトリの作業を続けます。
 まず main_novel/gpt_handoff.md をUTF-8で読み、そこに記録された方針に従って引き継いでください。
 ```
