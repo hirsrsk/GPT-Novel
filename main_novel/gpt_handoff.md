@@ -59,7 +59,7 @@ PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗す�
 - `memo_isaka.md`: 井坂の医師判断。
 - `memo_rio_stream.md`, `memo_rio_private.md`: 莉緒と湊人、配信構造、非公開関係。
 - `memo_title.md`: タイトル方針。
-- `memo_ch4_akane_yura_amagi.md`: 第四章以降の茜、由良、天城ライン。茜の悪役化、由良の研究欲、天城メディカル側の構図。
+- `memo_ch4_akane_yura_amagi.md`: 第四章以降の茜、由良、天城ライン。茜の悪役化、由良の研究欲、天城メディカル側の構図、終盤の魔王茜・包丁・配信・天城決着構想。
 - `detail_amagi_mizuhara.md`: 天城、水原、天城メディカル詳細。
 - `policy_realism.md`: 大人の行動線。
 - `policy_heat.md`: 情が制度を越える熱量。
