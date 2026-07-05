@@ -42,6 +42,8 @@ Before drafting or editing any prose scene, read these files in order:
 6. Relevant settings/memos for the scene:
    - `main_novel/settings.md`
    - `main_novel/settings_streamers.md`
+   - `main_novel/memo_kotoha.md` for Kotoha's recovery, food dependency, and consent/choice signals.
+   - `main_novel/memo_stream_store.md` for streaming and unmanned produce stand handling.
    - `main_novel/memo_ch4_akane_yura_amagi.md` for Akane, Yura, Amagi, final-arc material.
    - `main_novel/detail_amagi_mizuhara.md` for Mizuhara and Amagi Medical.
    - `main_novel/comments.md` for comment threads or bulletin-board sections.
@@ -96,7 +98,11 @@ Prefer the user's prose logic over GPT polish.
 - Minato, Mizuki, and Kotoha do not make formal acceptance conditions for visitors. They protect the kitchen, the house, and Kotoha through ordinary refusals and household actions. Do not turn their judgment into a checklist, contract negotiation, or policy discussion.
 - Mizuki is not only strong. Keep fear, hesitation, anger, and ordinary human limits visible.
 - Akane begins from hunger, pain, sleeplessness, and the desire to live. Do not replace that with clean slogans too early.
+- Kotoha's paper signals are concrete: circle means yes, horizontal line means no, dot means not yet/undecided, short vertical line means stop/return. Do not make the dot mean no.
+- Minato does not carry Kotoha outside. He waits while she chooses and walks. He supports her after she chooses to return or reaches out.
 - Mizuhara is not cold or inhuman. She genuinely wants to treat patients.
+- Mizuhara does not initially know the full old-house situation. She starts from Akane's small medical changes, then hears about the viral cooking-stream clip at Amagi Medical. Do not make her connect everything too early.
+- Amagi Medical includes sincere doctors, nurses, and researchers. The horror is that their real patient care can be routed into Reiji's system.
 - Do not involve Kusakabe in Guild or Kugayama contact lines. Kusakabe is unrelated to the Guild.
 
 ## Revision Checks
