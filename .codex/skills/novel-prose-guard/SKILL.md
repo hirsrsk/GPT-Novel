@@ -85,6 +85,7 @@ Prefer the user's prose logic over GPT polish.
 - Do not announce themes before the scene earns them.
 - Do not smooth characters into polite, cooperative, reasonable versions of themselves.
 - Do not add clarifying labels like chapter numbers or author-planning language into prose.
+- Do not overuse abstract boundary phrases such as "線を引く". Prefer concrete actions: refuse, stop the recording, send someone home, end the conversation, move the phone, close the door, put food on the table.
 - Use scene separators such as `----------------------------` when viewpoint or place changes abruptly.
 
 ## Character Guardrails
@@ -92,6 +93,7 @@ Prefer the user's prose logic over GPT polish.
 - Yura understands danger and refusal, but she does not stop. Her desire to see, know, and test is the engine. Do not make her a good listener, a responsible observer, or a person who avoids trouble after being warned.
 - Yura's interest is magical curiosity, not patient care. If she uses rescue, consent, or medical language, treat it as a tool or convenience unless the scene has earned otherwise.
 - Minato's food is not a negotiation where he asks the other person to design the meal. He quietly considers the person and cooks.
+- Minato, Mizuki, and Kotoha do not make formal acceptance conditions for visitors. They protect the kitchen, the house, and Kotoha through ordinary refusals and household actions. Do not turn their judgment into a checklist, contract negotiation, or policy discussion.
 - Mizuki is not only strong. Keep fear, hesitation, anger, and ordinary human limits visible.
 - Akane begins from hunger, pain, sleeplessness, and the desire to live. Do not replace that with clean slogans too early.
 - Mizuhara is not cold or inhuman. She genuinely wants to treat patients.
