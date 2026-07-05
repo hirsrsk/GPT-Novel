@@ -50,6 +50,7 @@ PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗す�
 `main_novel` の運用・注意メモ:
 
 - `gpt_notes.md`: 配信中/非配信、視点漏れ、コメント欄、無人販売所、魔法派などの作業注意。必読。
+- `user_written_style_samples.md`: ユーザー自身が書いた原文・文体サンプル。リライトや補筆時は、GPT案よりこちらの文体と判断を優先する。
 - `comments.md`: コメント欄、掲示板、ハンドル名管理。コメントや掲示板を書く前に読む。
 - `risk_names.md`: 人名・固有名詞の権利リスク。
 - `memo_stream_store.md`: 配信と無人販売所。
