@@ -9,6 +9,8 @@
 3. `main_novel/gpt_notes.md`
 4. 作業対象の本文・設定ファイル
 
+本文の執筆・リライト・文体調整を行う場合は、プロジェクト内ローカルスキル `.codex/skills/novel-prose-guard/SKILL.md` を先に読む。このスキルは、GPT臭、視点漏れ、短文羅列、人物の聞き分けの良さを防ぐための作業手順である。
+
 PowerShellでは最初にUTF-8を指定する。本文確認時も文字化け防止のため、`Get-Content` は原則 `-Encoding UTF8` を付ける。
 
 ```powershell
