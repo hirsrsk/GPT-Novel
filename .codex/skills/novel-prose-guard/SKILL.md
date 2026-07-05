@@ -41,6 +41,18 @@ Before writing, determine:
 
 When editing, do not patch one line in isolation. Read the surrounding exchange and make sure the next response still fits.
 
+## Tool Encoding
+
+On Windows, run Python-based skill tools in UTF-8 mode. This avoids CP932 decode failures when validating or reading Japanese skill files.
+
+Use:
+
+```powershell
+python -X utf8 C:\Users\hsrsk\.codex\skills\.system\skill-creator\scripts\quick_validate.py Z:\novel\.codex\skills\novel-prose-guard
+```
+
+Do not use plain `python ...quick_validate.py` for this project skill unless the environment is already UTF-8.
+
 ## Style Rules
 
 Prefer the user's prose logic over GPT polish.
@@ -76,4 +88,3 @@ After drafting or editing, check:
 - Did GPT-style short sentence stacking creep in?
 
 If a passage feels off, remove explanatory filler before adding new prose.
-
