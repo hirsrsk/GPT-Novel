@@ -11,6 +11,25 @@ Use this skill only for this novel project. Its job is to prevent GPT-style drif
 
 The core rule: before writing novel text, read the summarized project cautions and the user's own prose samples, then write within the viewpoint, information path, and character logic already established.
 
+## Skill Growth
+
+Treat this skill as a project-specific prose memory, not a finished static rule.
+
+When the user identifies prose as their own writing, or says a passage is close to their style, add or update an entry in `main_novel/user_written_style_samples.md`. Preserve enough source text or file/line anchors to recognize it later.
+
+When the user points out a recurring GPT failure, update this skill if the failure is general. Update a character memo or settings file if the failure is character-specific.
+
+Typical failures to fold back into this skill:
+
+- Short sentence stacking used as artificial rhythm.
+- Authorial explanation that states the meaning before the scene earns it.
+- Viewpoint leakage from later plot knowledge.
+- Characters becoming too obedient, polite, careful, or explanatory.
+- One-line substitutions that break the next line of dialogue.
+- Surface-level paraphrase that ignores character motive.
+
+The goal is not to copy the user's prose mechanically. The goal is to write project-native original prose by using the user's judgment patterns: viewpoint discipline, information routing, character motive, restraint, and pressure in dialogue.
+
 ## Required Reading Before Prose
 
 Before drafting or editing any prose scene, read these files in order:
@@ -40,6 +59,8 @@ Before writing, determine:
 - Which existing user-written samples are closest to the requested scene.
 
 When editing, do not patch one line in isolation. Read the surrounding exchange and make sure the next response still fits.
+
+When generating original prose, first choose the closest sample from `user_written_style_samples.md` and state internally what it teaches: sentence flow, viewpoint distance, dialogue pressure, or character handling. Do not imitate only the surface rhythm.
 
 ## Tool Encoding
 
