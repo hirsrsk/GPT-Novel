@@ -62,6 +62,7 @@ PowerShellの `rg main_novel/ch*.md` はワイルドカード解釈で失敗す�
 - `memo_purify.md`: 浄化、供物、魔物料理。
 - `memo_isaka.md`: 井坂の医師判断。
 - `memo_rio_stream.md`, `memo_rio_private.md`: 莉緒と湊人、配信構造、非公開関係。
+- `memo_rio_legal_battle.md`: 莉緒、紗和、轟木による古民家保全の法律バトル収拾案。民事保全、証拠保全、行政指導、食品衛生の現実法根拠と、思惑通りに進まない抵抗・ねじれ。
 - `memo_title.md`: タイトル方針。
 - `memo_ch4_akane_yura_amagi.md`: 第四章以降の茜、由良、天城ライン。茜の悪役化、由良の研究欲、天城メディカル側の構図、終盤の魔王茜・包丁・配信・天城決着構想。
 - `detail_amagi_mizuhara.md`: 天城、水原、天城メディカル詳細。
