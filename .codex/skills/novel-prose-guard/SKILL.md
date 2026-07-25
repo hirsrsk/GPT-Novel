@@ -88,6 +88,7 @@ Prefer the user's prose logic over GPT polish.
 - Do not smooth characters into polite, cooperative, reasonable versions of themselves.
 - Do not add clarifying labels like chapter numbers or author-planning language into prose.
 - Do not overuse abstract boundary phrases such as "線を引く". Prefer concrete actions: refuse, stop the recording, send someone home, end the conversation, move the phone, close the door, put food on the table.
+- Do not remove a premise from dialogue merely because the characters could already know it. Let dialogue expose the speaker's purpose, shared or unequal knowledge, and the minimum premise needed for the turn. Characters may restate known facts when confirming, persuading, correcting, recording, assigning responsibility, or making an institutional request; make that repetition natural through relationship, stakes, and turn-taking without telepathic shorthand or an artificial exposition dump.
 - Use scene separators such as `----------------------------` when viewpoint or place changes abruptly.
 
 ## Character Guardrails
