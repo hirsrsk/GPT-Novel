@@ -1,6 +1,44 @@
 # Claudeレビュー知見
 
-更新日: 2026-08-24
+更新日: 2026-08-26
+
+## 2026-08-26本文掲載順111章・クロエ同一セッションレビュー
+
+- 詳細正本: [本文掲載順詳細章立て.md](本文掲載順詳細章立て.md)
+- 大局正本: [長編大枠再構築.md](長編大枠再構築.md)
+- Claude連携担当: 専用カスタムエージェント「臥煙遠江」
+- 呼称: クロエ（PC1 Claude）
+- Claudeモデル: Opus、解決モデル `claude-opus-4-8`
+- 認証・課金経路: claude.ai、`subscription_only`
+- 永続session_id: `449ae1b0-30d3-4b4e-8464-421fbe3f2470`
+- 4巡すべて要求・応答session ID一致。新規session、fork、別provider、別modelは未使用。
+
+### 詳細レビュー巡
+
+| 巡 | 前巡指摘の閉鎖 | 新規意見 | 詳細正本の状態 |
+|---|---:|---:|---|
+| R1 | 新規116章をゼロベース監査 | P1=3、P2=7、P3=11、計21 | 116章案 |
+| R2 | R1の21件すべてCLOSED | P2=2、P3=2、計4 | 111章へ圧縮 |
+| R3 | R2の4件すべてCLOSED | P3=2 | 番号・フック・主視点を整合 |
+| R4 | R3の2件すべてCLOSED | P0〜P3=0 | 111章、全27件CLOSED |
+
+### R4収束証拠
+
+- レビュー対象章構造SHA-256: `805456ac3f2e6ca4c270ba8a3a005d134db65506993b7d68aed7ac090521f54c`
+- job: `claude-a64a4fe0cfe81809937a635a`
+- request: `claude-20260826_133839-21700-88ed5bd9`
+- prompt SHA-256: `91c9d6d90cfe0acdcd773e8d0dc625c9aeaa266d59ba9a4223ec58278441039f`
+- manifest SHA-256: `16aae930bf64a6470b889af0b78788e1293c551d395bb767b03aff34b2aaf9a5`
+- done SHA-256: `6f87d91837d401da565e447429f41b9fca64455767b4b54cb60775a507ee02d6`
+- status SHA-256: `bad2c9a8fa3641f717182f3993bc1c2dab6f6d1ec5d2275e39ddae91200b28ae`
+- result SHA-256: `e7665ff75e9a522dfb95be6789f693970f0268215692d73a0c35f4c92b8a5114`
+- result: `C:\GoogleDrive\AI\tools\ai-bridge\work\claude_results\novel_detailed_chapter_review_r4_20260826.md`
+- `done.state=completed`、`review_completed=true`、completion marker、result SHA一致。
+- `same_session_verified=true`、`runner_session_identity_verified=true`。
+- R1〜R3の全27件CLOSED。R4新規修正意見0件。
+- 判定: `NO_CORRECTION_OPINIONS`。
+
+収束後、詳細正本へ証拠節だけを追記したため、現行ファイルSHAはレビュー対象章構造SHAと異なる。111章の表本文は変更していない。
 
 ## 2026-08-24設定改訂による旧レビュー知見の扱い
 
