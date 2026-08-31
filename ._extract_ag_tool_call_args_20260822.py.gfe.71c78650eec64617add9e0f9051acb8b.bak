@@ -1,0 +1,71 @@
+from __future__ import annotations
+
+import json
+import re
+import sqlite3
+import sys
+from pathlib import Path
+
+KEYWORDS = (
+    "gfe.execute_create",
+    "gfe_execute_create",
+    "execute_create",
+    "novel_crossover_review_ag_round2_20260822.md",
+    "request_id",
+    "requestId",
+    "encoding",
+    "Utf8",
+    "\"path\"",
+    "\"content\"",
+)
+
+
+def spans(value: object) -> list[str]:
+    if isinstance(value, str):
+        data = value.encode("utf-8", errors="ignore")
+    elif isinstance(value, bytes):
+        data = value
+    else:
+        return []
+    chunks = re.findall(rb"[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f]{4,}", data)
+    result = []
+    for chunk in chunks:
+        text = chunk.decode("utf-8", errors="ignore").strip()
+        if not text or not any(keyword.casefold() in text.casefold() for keyword in KEYWORDS):
+            continue
+        text = re.sub(r'("content"\\s*:\\s*").*', r'\\1<redacted>', text, flags=re.DOTALL)
+        if len(text) > 800:
+            text = text[:800] + "...<truncated>"
+        result.append(text)
+    return result
+
+
+def main() -> int:
+    database = Path(sys.argv[1]).resolve()
+    with sqlite3.connect(f"file:{database}?mode=ro", uri=True) as connection:
+        columns = [row[1] for row in connection.execute("pragma table_info(steps)")]
+        rows = list(connection.execute("select * from steps where idx >= 119 order by idx"))
+    output = []
+    for row in rows:
+        values = dict(zip(columns, row))
+        filtered = {}
+        for column, value in values.items():
+            found = spans(value)
+            if found:
+                filtered[column] = found
+        output.append({
+            "idx": values.get("idx"),
+            "step_type": values.get("step_type"),
+            "status": values.get("status"),
+            "filtered_spans": filtered,
+        })
+    print(json.dumps({
+        "schema": "antigravity-filtered-tool-call-evidence/1",
+        "steps": output,
+        "content_redacted": True,
+    }, ensure_ascii=False, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

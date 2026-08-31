@@ -1,0 +1,3 @@
+これはDirectResultFileのGFE正規schemaライブ検証です。
+ローカルの他ファイル、ウェブ、検索ツールは使わないでください。
+最終Markdown本文は DIRECT_GFE_SCHEMA_CANARY_OK の1行だけにしてください。
