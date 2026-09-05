@@ -1,0 +1,4 @@
+interface:
+  display_name: "Novel Structure Guard"
+  short_description: "Check novel causality, scene contracts, and continuity."
+  default_prompt: "Use $novel-structure-guard to audit this outline or scene plan for causal structure and continuity."

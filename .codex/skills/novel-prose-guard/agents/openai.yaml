@@ -1,4 +1,4 @@
 interface:
   display_name: "Novel Prose Guard"
   short_description: "Read project writing rules before novel prose work."
-  default_prompt: "Use this skill before drafting or revising prose in this novel project."
+  default_prompt: "Use $novel-prose-guard before drafting or revising prose in this novel project."
